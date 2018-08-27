@@ -22,7 +22,7 @@ end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
 
-  word_array = text.match(/^\A\b[A-Z]\w+[^abcdefghijklmnop]/)
+  word_array = text.match(/^\A\b[A-Z]\w+[.!?:;]/)
   if word_array == nil
     false
   else
