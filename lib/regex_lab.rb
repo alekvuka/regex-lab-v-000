@@ -32,8 +32,9 @@ end
 
 def valid_phone_number?(phone)
 
-  if phone.match(^(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$)
+  if phone.match(/^(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/)
     return true
   else
-    return false 
+    return false
+  end
 end
